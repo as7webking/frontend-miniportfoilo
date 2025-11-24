@@ -1,0 +1,314 @@
+:root {
+  --header-bg: #2c3e50; /* Dark Slate Blue */
+  --body-bg: #f8f9fa; /* Light background */
+  --primary-text: #34495e; /* Dark text */
+  --accent-color: #3498db; /* Professional Blue */
+  --light-text: #ecf0f1; /* Off-white for dark areas */
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  background-color: var(--body-bg);
+  color: var(--primary-text);
+  line-height: 1.6;
+}
+
+/* Sets smooth scrolling behavior for anchor links */
+html {
+  scroll-behavior: smooth;
+  /* Compensation for the fixed header height */
+  padding-top: 50px;
+}
+
+/* Remove default list styles and margins */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Remove text decoration from all links */
+a {
+  text-decoration: none;
+  color: var(--accent-color);
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #2980b9;
+}
+
+/* Main container for centering content and setting max width */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px 20px;
+}
+
+/* Section above the navigation bar (e.g., the Hero/About section) */
+.first-section {
+  min-height: 80vh;
+  padding-top: 60px; /* Offset for fixed header */
+  display: flex;
+  align-items: center;
+}
+
+/* General Section Styling */
+section {
+  padding: 40px 0;
+}
+
+h2 {
+  font-size: 2em;
+  color: var(--header-bg);
+  border-bottom: 3px solid var(--accent-color);
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+
+/* --- 2. NAVIGATION (HEADER) STYLES (Adjusted colors) --- */
+
+/* Fixed header container */
+.main-header {
+  width: 100%;
+  /* Fixes the header to the top of the viewport */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: var(--header-bg); /* Darker color for professionalism */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation bar layout using Flexbox */
+.navbar {
+  display: flex;
+  /* Centers the navigation links (nav-center) and the toggle button */
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+.navbar h1 {
+  color: var(--light-text);
+  font-size: 1.5em;
+  margin: 0;
+}
+
+/* Central links container */
+.nav-center {
+  /* Auto margins center the flex item within the navbar container */
+  margin-right: auto;
+  margin-left: auto;
+  display: flex; /* Ensures links are inline */
+}
+
+/* Styling for individual links */
+.nav-center a {
+  color: var(--light-text);
+  text-decoration: none;
+  padding: 10px 15px;
+  margin: 0 5px;
+  transition: background-color 0.3s, border-radius 0.3s;
+}
+
+/* Hover effect */
+.nav-center a:hover {
+  background-color: #34495e; /* Darker accent */
+  border-radius: 6px;
+}
+
+/* Hamburger menu toggle button (Hidden on desktop) */
+.menu-toggle {
+  display: none;
+  font-size: 1.5em;
+  background: none;
+  border: none;
+  color: var(--light-text);
+  cursor: pointer;
+}
+
+/* --- 3. CUSTOM STYLES FOR CONTENT BLOCKS --- */
+
+/* Profile/Hero Section Specifics */
+.profile-layout {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+}
+
+.profile-text {
+  flex: 2;
+}
+
+.profile-contact {
+  flex: 1;
+  text-align: right;
+}
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--accent-color);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 5px;
+  color: var(--header-bg);
+}
+
+.hero p.title {
+  font-size: 1.5em;
+  color: var(--accent-color);
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+.contact-info p {
+  margin: 5px 0;
+  font-size: 0.9em;
+}
+
+/* Experience and Education Entry Styles */
+.entry {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+  border-left: 5px solid var(--accent-color);
+  transition: transform 0.2s;
+}
+
+.entry:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.entry h3 {
+  color: var(--header-bg);
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.entry p.subtitle {
+  font-style: italic;
+  color: #7f8c8d;
+  margin-bottom: 10px;
+}
+
+.entry ul {
+  padding-left: 20px;
+  list-style: disc;
+}
+
+/* Skills Styling */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.skill-tag {
+  background-color: var(--accent-color);
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 0.9em;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: var(--header-bg);
+  color: var(--light-text);
+  font-size: 0.8em;
+  margin-top: 40px;
+}
+
+/* --- 4. RESPONSIVENESS (MOBILE DEVICES - Customizing user's logic) --- */
+
+@media (max-width: 768px) {
+  /* Global container adjustment for smaller screens */
+  .container {
+    max-width: 95%;
+    padding: 10px;
+  }
+
+  .first-section {
+    padding-top: 80px;
+  }
+
+  .hero h1 {
+    font-size: 2.2em;
+  }
+
+  .hero p.title {
+    font-size: 1.2em;
+  }
+
+  /* --- Navigation Adaptation --- */
+  .navbar {
+    flex-wrap: wrap; /* Allows menu items to stack */
+  }
+
+  /* Show the hamburger menu toggle */
+  .menu-toggle {
+    display: block;
+    order: 2; /* Move toggle to the right */
+  }
+
+  .navbar h1 {
+    order: 1;
+  }
+
+  /* Hide central links by default on mobile */
+  .nav-center {
+    display: none;
+    flex-direction: column; /* Stack links vertically */
+    width: 100%;
+    text-align: center;
+    margin: 10px 0 0 0; /* Add top margin when shown */
+    order: 3; /* Push below the name and toggle */
+  }
+
+  /* Class added by JavaScript to show the mobile menu */
+  .nav-center.active {
+    display: flex;
+  }
+
+  /* Mobile link styling */
+  .nav-center a {
+    padding: 10px 0;
+    margin: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+  }
+
+  /* --- Hero/About Section Adaptation --- */
+  .profile-layout {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-contact {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .profile-photo {
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Max Mustermann | Full-Stack Entwickler</title>
+    <!-- Use the Inter font for a modern, professional look -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- --- HEADER / NAVIGATION --- -->
+
+    <header class="main-header">
+      <div class="navbar">
+        <h1>A7</h1>
+        <nav class="nav-center" id="navMenu">
+          <a href="#profil">Profil</a>
+          <a href="#erfahrung">Erfahrung</a>
+          <a href="#projekte">Projekte</a>
+          <a href="#faehigkeiten">Fähigkeiten</a>
+          <a href="#kontakt">Kontakt</a>
+        </nav>
+        <!-- Hamburger menu icon (using a simple text/emoji icon) -->
+        <button
+          class="menu-toggle"
+          aria-label="Toggle navigation"
+          onclick="toggleMenu()"
+        >
+          ☰
+        </button>
+      </div>
+    </header>
+
+    <!-- --- 1. PROFIL / HERO SECTION (first-section) --- -->
+
+    <section id="profil" class="first-section container hero">
+      <div class="profile-layout">
+        <div class="profile-text">
+          <h1>Frontend Entwickler</h1>
+          <p class="title">
+            Spezialisiert auf Frontend-Entwicklung & moderne WordPress-Lösungen
+          </p>
+          <p>
+            Als engagierter Frontend-Entwickler mit Schwerpunkt auf modernen
+            Webtechnologien und benutzerfreundlichen Interfaces erstelle ich
+            performante, responsive und leicht wartbare Websites. Ich arbeite
+            täglich mit HTML, CSS, JavaScript, React und WordPress (Theme- &
+            Plugin-Anpassung).
+          </p>
+          <p>
+            Ich suche neue Projekte im Bereich Webdesign, Website-Optimierung
+            und WordPress-Entwicklung und freue mich auf die Zusammenarbeit mit
+            motivierten Teams und Kunden.
+          </p>
+        </div>
+        <div class="profile-contact">
+          <img
+            src="profilfoto.jpg"
+            alt="Profilbild Ahmed Seyitkhalilov"
+            class="profile-photo"
+          />
+          <div class="contact-info">
+            <h3 style="color: var(--header-bg); margin-bottom: 0">Kontakt</h3>
+            <p>Gutenbergstraße, 27<br />50126 Bergheim, Deutschland</p>
+            <p>
+              E-Mail:
+              <a href="mailto:max.mustermann@example.com"
+                >seithalilovahmed@gmail.com</a
+              >
+            </p>
+            <p>Telefon: +49 175 9611676</p>
+            <p>
+              LinkedIn: <a href="https://www.linkedin.com/in/ahmedseithalilov/" target="_blank">Ahmed Seyitkhalilov</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. BERUFSERFAHRUNG  -->
+
+    <section id="erfahrung" class="container">
+      <h2>Berufserfahrung</h2>
+
+      <div class="entry">
+        <h3>Web-Entwickler (Praktikum)</h3>
+        <p class="subtitle">Lindenfield GmbH, Köln | 12/2023 – 02/2024</p>
+        <ul>
+          <li>
+            Erstellung responsiver Webseiten mit HTML, CSS und JavaScript.
+          </li>
+          <li>Mitarbeit an der Optimierung bestehender Webprojekte.</li>
+          <li>Unterstützung bei kleineren Frontend-Umsetzungen.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <h3>WordPress Entwickler</h3>
+        <p class="subtitle">Wacker Best Fast, Kiew | 06/2021 – 08/2021</p>
+        <ul>
+          <li>Erstellung und Pflege von WordPress-Seiten.</li>
+          <li>Arbeit mit Themes, Plugins und Elementor.</li>
+          <li>Inhaltsaufbereitung und technische Umsetzung.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 3. Projekte -->
+
+    <section
+      id="projekte"
+      class="container"
+      style="background-color: #ecf0f1; border-radius: 10px"
+    >
+      <h2>Ausgewählte Projekte</h2>
+
+      <div class="entry">
+        <h3>Frontend Mini-Library & Tools (FreeCodeCamp)</h3>
+        <p class="subtitle">
+          Technologien: JavaScript, Responsive Design, DOM-Handling
+        </p>
+        <p>
+          Umsetzung verschiedener kleiner Projekte im Bereich Algorithmen,
+          responsives Webdesign und interaktive Komponenten. Fokus auf sauberen
+          Code und moderne Frontend-Grundlagen.
+        </p>
+      </div>
+
+      <div class="entry">
+        <h3>WordPress Unternehmensseite</h3>
+        <p class="subtitle">
+          Technologien: WordPress, PHP-Basics, Elementor, CSS
+        </p>
+        <p>
+          Erstellung einer mehrseitigen Firmenwebsite mit individuellen
+          Abschnitten, modernem Layout und anpassbaren Modulen über das
+          WordPress-Backend.
+        </p>
+      </div>
+    </section>
+
+    <!-- 4. Fähigkeiten -->
+    <section id="faehigkeiten" class="container">
+      <h2>Fähigkeiten & Expertise</h2>
+
+      <h3>Programmiersprachen & Frameworks</h3>
+      <div class="skills-grid">
+        <span class="skill-tag">HTML5 / CSS3</span>
+        <span class="skill-tag">JavaScript (ES6+)</span>
+        <span class="skill-tag">React (Grundlagen)</span>
+        <span class="skill-tag">PHP / Laravel</span>
+        <span class="skill-tag">WordPress / Elementor</span>
+      </div>
+
+      <h3 style="margin-top: 30px">Tools & Arbeitsweise</h3>
+      <div class="skills-grid">
+        <span class="skill-tag">Git / GitHub</span>
+        <span class="skill-tag">Responsive Webdesign</span>
+        <span class="skill-tag">SEO-Grundlagen</span>
+        <span class="skill-tag">Agile Arbeitsweise</span>
+      </div>
+    </section>
+
+    <!-- 5. Bildung -->
+
+    <section id="kontakt" class="container">
+      <h2>Bildung & Kontakt</h2>
+
+      <div class="entry">
+        <h3>JavaScript & Frontend Development</h3>
+        <p class="subtitle">FreeCodeCamp | 11/2024 – 02/2025</p>
+        <p>
+          Abgeschlossen: JavaScript Algorithms, Front End Development Libraries.
+        </p>
+      </div>
+
+      <div class="entry">
+        <h3>Deutschkurse</h3>
+        <p class="subtitle">Benedict School, Köln | 02/2024 – 09/2024</p>
+        <p>B2 Berufskurs (ohne Abschluss).</p>
+
+        <p class="subtitle" style="margin-top: 10px">
+          Bildungsinstitut der Rheinischen Wirtschaft, Bergheim | 08/2022 –
+          03/2023
+        </p>
+        <p>B1 Deutschkurs (Abgeschlossen).</p>
+      </div>
+
+      <div class="entry">
+        <h3>Bauingenieurwesen (ohne Abschluss)</h3>
+        <p class="subtitle">
+          Kiewer Nationale Universität für Bauwesen | 09/2020 – 02/2022
+        </p>
+      </div>
+
+      <div class="entry">
+        <h3>Allgemeine Hochschulreife</h3>
+        <p class="subtitle">328. Weiterführende Schule, Kiew | 2009 – 2020</p>
+      </div>
+
+      <h3 style="margin-top: 40px; color: var(--header-bg)">Kontakt</h3>
+      <p>
+        Ich freue mich über Möglichkeiten im Bereich Frontend oder Webdesign.
+      </p>
+
+      <p style="font-weight: bold">
+        E-Mail:
+        <a href="mailto:seithalilovahmed@gmail.com">seithalilovahmed@gmail.com</a>
+      </p>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+      <p>&copy; 2025 Ahmed Seyitkhalilov | Entwickler Portfolio</p>
+    </footer>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
